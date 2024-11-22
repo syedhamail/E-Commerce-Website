@@ -2,20 +2,226 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.img1{
+  width: 1285px;
+  height: 800px;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+.hero-button-men{
+  position: absolute;
+  top: 110.5%;         /* Adjust top and left values to position */
+  left: 15.5%;        /* the button at your preferred place */
+  transform: translate(-50%, -50%);
+  padding: 12px 35px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero-button-men:hover{
+  background-color: rgba(193, 182, 182, 0.711);
+}
+.hero-button-women{
+  position: absolute;
+  top: 110.5%;         /* Adjust top and left values to position */
+  left: 30.3%;        /* the button at your preferred place */
+  transform: translate(-50%, -50%);
+  padding: 12px 35px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero-button-women:hover{
+  background-color: rgba(193, 182, 182, 0.711);
+}
+.vabs{
+  margin-left: 800px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+.vabs:hover{
+  color: rgb(233, 127, 52);
+}
+.img2{
+  width: 600px;
+  height: 600px;
+  margin-left: 44px;
+  border-radius: 10px;
+}
+.img3{
+  width: 600px;
+  height: 600px;
+  margin-left: 60px;
+  border-radius: 10px;
+}
+.tp-m {
+  position: absolute;
+  top: 683%;         /* Adjust top and left values to position */
+  left: 25.2%;        /* the button at your preferred place */
+  transform: translate(-50%, -50%);
+  padding: 12px 25px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+
+}
+.tp-m:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid #ffffff;
+  transition:  0.3s ;
+}
+.tp-wm{
+  position: absolute;
+  top: 683%;         /* Adjust top and left values to position */
+  left: 74.7%;        /* the button at your preferred place */
+  transform: translate(-50%, -50%);
+  padding: 12px 25px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+.tp-wm:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid #ffffff;
+  transition:  0.3s ;
+}
+.img4{
+  padding-top: 120px;
+  width: 100%;
+  height: 720px;
+}
+.tp-m3{
+  position: absolute;
+  top: 1250%;         /* Adjust top and left values to position */
+  left: 40%;        /* the button at your preferred place */
+  transform: translate(-50%, -50%);
+  padding: 8px 20px;
+  background-color: white;
+  color: #000000;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+.tp-m3:hover{
+  background-color: black;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.tp-wm3{
+  position: absolute;
+  top: 1250%;         /* Adjust top and left values to position */
+  left: 58.5%;        /* the button at your preferred place */
+  transform: translate(-50%, -50%);
+  padding: 8px 20px;
+  background-color: white;
+  color: #000000;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+.tp-wm3:hover{
+  background-color: black;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.saleText{
+  color: black;
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  margin-right: 10px;
+}
+.contactText{
+  color: black;
+  font-size: 90px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  margin-right: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/*Login Page*/
+
+/* From Uiverse.io by Praashoo7 */ 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+.heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  margin-bottom: -1px;
+  margin-bottom: 30px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
 }
