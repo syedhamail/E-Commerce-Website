@@ -237,16 +237,8 @@ export default function MenBlackRunning() {
               </div>
 
               <div className="flex">
-                <Link
-                  href={{
-                    pathname: "/Checkout",
-                    query: {
-                      id: product.id,
-                      name: product.name,
-                      price: product.price,
-                      image: product.image,
-                    },
-                  }}
+              <Link
+                  href={`/Checkout?id=${product.id}&name=${product.name}&price=${product.price}&image=${product.image}`}
                 >
                   <button className="flex ml-auto text-white font-bold bg-slate-800 border-0 py-2 px-6 focus:outline-none hover:bg-slate-900 rounded">
                     BUY NOW

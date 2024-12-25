@@ -1,13 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import Header from "../header/page";
 import Footer from "../footer/page";
 import { useSearchParams } from "next/navigation";
 
-// pages/checkout.js
-
-export default function Checkout() {
+const CheckoutContent = () => {
   const searchParams = useSearchParams();
   const id = searchParams.get('id');
   const name = searchParams.get('name');
@@ -349,5 +347,13 @@ export default function Checkout() {
 
       <Footer />
     </main>
+  );
+}
+
+export default function Checkout() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <CheckoutContent />
+    </Suspense>
   );
 }
