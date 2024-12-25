@@ -1,6 +1,8 @@
-'use client';
+"use client";
 
 // pages/auth/signup.js
+import Header from "../header/page";
+import Footer from "../footer/page";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -30,59 +32,80 @@ export default function Signup() {
   };
 
   return (
-
     <main>
+      {/*Header*/}
+
+      <Header />
 
       <div>
-            <Link href={"/"}>
-            <h1 className="text-5xl font-bold text-center pt-10">SHMUQ SHOE</h1>
-            </Link>
-          </div>
+          <h1 className="text-5xl font-bold text-center pt-10">Sign Up</h1>
+      </div>
 
-    <div className="form" style={{ maxWidth: "400px", margin: "50px auto", padding: "20px", border: "1px solid #ccc" }}>
-      <h2 className="heading">Sign Up</h2>
-      <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: "10px" }}>
-          <label className="text-white">Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="field"
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-          />
-        </div>
-        <div style={{ marginBottom: "10px" }}>
-          <label className="text-white">Password:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className="field"
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-          />
-        </div>
-        <div style={{ marginBottom: "10px" }}>
-          <label className="text-white">Confirm Password:</label>
-          <input
-            type="password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-            className="field"
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-          />
-        </div>
-        <button className="button1" type="submit" style={{ width: "100%", padding: "10px", }}>
-          Sign Up
-        </button>
-      </form>
-      <p className="text-white" style={{ marginTop: "20px" }}>
-        Already have an account? <Link href={"login"} className="ml-1 text-blue-400">Login</Link>
-      </p>
-    </div>
+      <div
+        className="form"
+        style={{
+          maxWidth: "400px",
+          margin: "50px auto",
+          padding: "20px",
+          border: "1px solid #ccc",
+        }}
+      >
+        <h2 className="heading"></h2>
+        <form onSubmit={handleSubmit}>
+          <div style={{ marginBottom: "10px" }}>
+            <label className="text-white">Email:</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="field"
+              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
+            />
+          </div>
+          <div style={{ marginBottom: "10px" }}>
+            <label className="text-white">Password:</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              className="field"
+              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
+            />
+          </div>
+          <div style={{ marginBottom: "10px" }}>
+            <label className="text-white">Confirm Password:</label>
+            <input
+              type="password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+              className="field"
+              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
+            />
+          </div>
+          <button
+            className="button1"
+            type="submit"
+            style={{ width: "100%", padding: "10px" }}
+          >
+            Sign Up
+          </button>
+        </form>
+        <p className="text-white" style={{ marginTop: "20px" }}>
+          Already have an account?{" "}
+          <Link href={"login"} className="ml-1 text-blue-400">
+            Login
+          </Link>
+        </p>
+      </div>
+
+      {/*Footer*/}
+      
+            <div className="mt-40">
+            <Footer />
+            </div>
 
     </main>
   );

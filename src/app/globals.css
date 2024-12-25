@@ -63,19 +63,12 @@
   border-radius: 10px;
 }
 .tp-m {
-  position: absolute;
-  top: 683%;         /* Adjust top and left values to position */
-  left: 25.2%;        /* the button at your preferred place */
   transform: translate(-50%, -50%);
-  padding: 12px 25px;
   background-color: transparent;
   color: #ffffff;
   border: 3px solid #ffffff;
-  cursor: pointer;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: larger;
   z-index: 1;
-  font-weight: 800;
   letter-spacing: 4px;
 
 }
@@ -85,20 +78,13 @@
   border: 3px solid #ffffff;
   transition:  0.3s ;
 }
-.tp-wm{
-  position: absolute;
-  top: 683%;         /* Adjust top and left values to position */
-  left: 74.7%;        /* the button at your preferred place */
+.tp-wm{       
   transform: translate(-50%, -50%);
-  padding: 12px 25px;
   background-color: transparent;
   color: #ffffff;
   border: 3px solid #ffffff;
-  cursor: pointer;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: larger;
   z-index: 1;
-  font-weight: 800;
   letter-spacing: 4px;
 }
 .tp-wm:hover{
@@ -166,8 +152,7 @@
 }
 
 /*Login Page*/
-
-/* From Uiverse.io by Praashoo7 */ 
+ 
 .form {
   display: flex;
   flex-direction: column;
@@ -224,4 +209,20 @@
 .button1:hover {
   background-color: black;
   color: white;
+}
+
+/* Ensure the select width takes the full space on smaller screens */
+select {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  /* Fix for very small screens */
+  .select-wrapper {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
